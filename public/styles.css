@@ -41,7 +41,7 @@ body{
     padding:0px 12px;
 }
 .reminder-head{
-
+text-decoration: underline;
     background-color:gray;
     height:75px;
 }
@@ -52,3 +52,20 @@ body{
     margin-top:-53px;
     text-align: center;
 }
+.reminder-box{
+    margin-top:45px;
+    width:100%;
+    border: solid 1px black;
+    height: 200px;
+    border-radius: 25px;
+
+
+    line-height:1;
+    padding: 0px 5px 0px 5px;
+    overflow:hidden;
+
+}
+.para{
+    font-size:12px
+}
+

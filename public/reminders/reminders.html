@@ -1,7 +1,23 @@
 <div class="container-fluid reminder-head">
     <div class="row">
 
-        <h1 class="reminders text-center">Reminders </h1><button class="btn btn-lg btn-success addReminder"  >+</button>
+        <h1 class="reminders text-center">Reminders </h1><button class="btn btn-lg btn-success addReminder">+</button>
+
+    </div>
+
+</div>
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-6" ng-repeat="remind in reminders">
+            <div class="reminder-box">
+                <h3 class="text-center">{{remind.title}}</h3>
+                <p class="text-center para">{{remind.message}}</p>
+                <p class="text-center">{{remind.time}}</p>
+                <p class="text-center">{{remind.occurence}}</p>
+            </div>
+        </div>
+
 
     </div>
 

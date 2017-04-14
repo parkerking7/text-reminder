@@ -6,9 +6,17 @@ var User = require("../models/user-schema");
 
 textRouter
 
+
     .get("/", function(req, res){
         User.find(req.query, function(err, Users){
             res.send(Users);
+        } )
+
+    })
+    .get("/:phoneNumber", function(req, res){
+        User.find(req.params, function(err, user){
+//
+            res.send(user);
         } )
 
     })
