@@ -1,0 +1,54 @@
+body{
+    background: #cedce7; /* Old browsers */
+    background: linear-gradient(to bottom, #cedce7 0%,#596a72 100%);
+    margin: auto; /*This works so I'm leaving it */
+    width:auto;
+    height:100vh
+}
+.text-wrapper{
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+.box-wrapper{
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top: -17vh; /* this is half the height of your div*/
+    margin-left:-37.5vw; /*this is half of width of your div*/
+}
+.box{
+    /*background-color:black;*/
+    border: 1px solid black;
+    height:34vh;
+    /*min-height:40px;*/
+    width:75vw;
+    border-radius: 30px;
+}
+.inner-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-12.375vw;
+    margin-top: -10px;
+}
+.input-box{
+    width:18.75vw;
+    height:25px;
+}
+.enterButton{
+    height:25px;
+    padding:0px 12px;
+}
+.reminder-head{
+
+    background-color:gray;
+    height:75px;
+}
+.addReminder{
+    display:inline;
+    float:right;
+    margin-right:10%;
+    margin-top:-53px;
+    text-align: center;
+}
