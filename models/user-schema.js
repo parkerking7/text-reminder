@@ -14,11 +14,18 @@ var userSchema = new Schema({
                 type:String,
                 enum: ["One Time", "Daily"]
             },
-            time:String
+            time:String,
+            hour: String,
+            minute:String,
+            amPm:{
+                type:String,
+                enum: ["AM, PM"]
+            }
+
         }
     ]
 
-})
+});
 
 var User = mongoose.model("user", userSchema);
 

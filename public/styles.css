@@ -58,8 +58,8 @@ text-decoration: underline;
     border: solid 1px black;
     height: 200px;
     border-radius: 25px;
-
-
+    background-color:lightgray;
+    color:black;
     line-height:1;
     padding: 0px 5px 0px 5px;
     overflow:hidden;
@@ -76,3 +76,15 @@ text-decoration: underline;
     float:right;
 }
 
+.title,.message, .occurence, .hour, .minute, .amPm, .remind-btn{
+    width:100%;
+    line-height:20px;
+    margin-top:5px;
+
+}
+.form-box{
+    z-index: 20;
+    border: 1px solid black;
+    margin-top:20px;
+    background: lightgray;
+}
