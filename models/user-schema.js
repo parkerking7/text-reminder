@@ -12,7 +12,7 @@ var userSchema = new Schema({
             message: String,
             occurence: {
                 type:String,
-                enum: ["One Time", "Daily", "Weekly"]
+                enum: ["One Time", "Daily"]
             },
             time:String
         }

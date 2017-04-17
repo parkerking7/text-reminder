@@ -8,7 +8,6 @@ app.controller("homeController", ["$scope","messageService","$location", functio
     });
 
 $scope.findOrCreate = function(number) {
-    console.log(number)
         messageService.get(number).then(function (response) {
             var foundUser = response.data[0];
             if(foundUser === undefined){

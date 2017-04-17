@@ -1,11 +1,11 @@
 var express = require("express");
 var app = express();
-var textRoute = require("./routes/text-router")
+var textRoute = require("./routes/text-router");
 var mongoose = require("mongoose");
 var bodyParser = require("body-parser");
-var path = require("path")
+var path = require("path");
 var port = 3000;
-
+var cron = require("node-cron");
 
 
 
@@ -22,4 +22,4 @@ app.use("/texts", textRoute);
 
 app.listen(port, function(){
     console.log("Server is running on port " + port)
-})
+});

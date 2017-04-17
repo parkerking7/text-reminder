@@ -68,4 +68,11 @@ text-decoration: underline;
 .para{
     font-size:12px
 }
+.deleteX{
+    display:inline;
+    cursor:pointer;
+    margin-top:-45px;
+    margin-right:10px;
+    float:right;
+}
 

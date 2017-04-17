@@ -8,7 +8,7 @@ var authToken = "20bb01386a3c4dd1748dd19d2d8f4b75";
 
 User.find(req.query, function(err, foundUsers){
 
-})
+});
 
 
 // function sendMessage() {
