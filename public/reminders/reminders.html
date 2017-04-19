@@ -44,7 +44,7 @@
                 <button class="remind-btn btn" ng-click="createReminder(data); form = !form;">Send Through </button>
             </div>
         </div>
-        <div class="col-xs-6" ng-repeat="remind in reminders track by $index" ng-init="runReminders($index)">
+        <div class="col-sm-6 col-xs-12" ng-repeat="remind in reminders track by $index" ng-init="runReminders($index)">
             <div class="reminder-box">
                 <h3 class="text-center">{{remind.title}}</h3> <span><a class="deleteX" ng-click="deleteReminder($index)">x</a></span>
                 <p class="text-center para">{{remind.message}}</p>
