@@ -12,7 +12,6 @@ $scope.findOrCreate = function(number) {
             var foundUser = response.data[0];
             if(foundUser === undefined){
                 number = {phoneNumber:number};
-                console.log(number);
                 messageService.newUser(number).then(function(response){
                     messageService.get(response.phoneNumber).then(function(response){
                         var createdUser = response.data[0];
