@@ -3,7 +3,8 @@ body{
     background: linear-gradient(to bottom, #cedce7 0%,#596a72 100%);
     margin: auto; /*This works so I'm leaving it */
     width:auto;
-    height:100vh
+    height:100vh;
+    font-family: 'Iceland', cursive;
 }
 .text-wrapper{
     position: absolute;

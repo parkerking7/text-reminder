@@ -11,11 +11,19 @@ $scope.findOrCreate = function(number) {
         messageService.get(number).then(function (response) {
             var foundUser = response.data[0];
             if(foundUser === undefined){
-                console.log("number is not in the system")
+                number = {phoneNumber:number};
+                console.log(number);
+                messageService.newUser(number).then(function(response){
+                    messageService.get(response.phoneNumber).then(function(response){
+                        var createdUser = response.data[0];
+                        messageService.userInfo = createdUser;
+                        $location.url("/reminders");
+                    })
+                })
             }
             else{
                 messageService.userInfo = foundUser;
-                $location.url("/reminders")
+                $location.url("/reminders");
 
             }
         });

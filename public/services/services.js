@@ -20,4 +20,10 @@ app.service("messageService", function($http){
         })
     }
 
+    this.newUser = function(number){
+        return $http.post("http://localhost:3000/texts", number).then(function(response){
+            return response.data
+        })
+    }
+
 });
